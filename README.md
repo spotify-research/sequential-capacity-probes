@@ -9,11 +9,7 @@ Higher-Order Sequence Modelling?”**, accepted at the
 Marriott City Center, Minneapolis, Minnesota, USA, September 28–October 2,
 2026.
 
-<p>
-  <strong>Official publication code from
-    <a href="https://research.atspotify.com/"><img src="assets/spotify-research-icon.png" alt="" width="20" height="20"> Spotify Research</a>.
-  </strong>
-</p>
+**Official publication code from [Spotify Research](https://research.atspotify.com/).**
 
 [Aleksandr V. Petrov](https://scholar.google.com/citations?user=Cw7DY8IAAAAJ),
 [Praveen Chandar](https://scholar.google.com/citations?user=phLOBVYAAAAJ),
