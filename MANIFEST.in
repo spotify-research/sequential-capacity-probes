@@ -6,7 +6,7 @@ include NOTICE
 include .github/workflows/tests.yml
 include requirements-lock.txt
 include SECURITY.md
-recursive-include assets *.png
+recursive-include artifacts *.csv *.json *.log *.md SHA256SUMS
 recursive-include configs *.json
 recursive-include data *.json
 recursive-include docs *.md

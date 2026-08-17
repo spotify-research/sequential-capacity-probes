@@ -72,7 +72,8 @@ def test_citation_metadata_identifies_the_official_paper_code() -> None:
     assert citation["repository-code"] == (
         "https://github.com/spotify-research/sequential-capacity-probes"
     )
-    assert "date-released" not in citation
+    assert citation["version"] == "1.0.0"
+    assert str(citation["date-released"]) == "2026-08-17"
     assert [author["family-names"] for author in citation["authors"]] == [
         "Petrov",
         "Chandar",

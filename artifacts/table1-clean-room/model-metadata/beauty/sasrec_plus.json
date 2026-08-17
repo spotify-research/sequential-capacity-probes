@@ -1,0 +1,122 @@
+{
+  "config": {
+    "model": {
+      "blocks": 1,
+      "dropout": 0.2,
+      "factors": 64,
+      "heads": 1,
+      "layers": "SASRec",
+      "loss": "sampled_softmax",
+      "max_length": 50,
+      "negatives": 256
+    },
+    "training": {
+      "amazon_max_epochs": 200,
+      "batch_size": 128,
+      "early_stopping_patience": 50,
+      "learning_rate": 0.001,
+      "movielens_max_epochs": 100,
+      "validation_metric": "Recall@10"
+    }
+  },
+  "created_at": "2026-08-15T20:21:01.339961+00:00",
+  "data": {
+    "holdout": {
+      "path": "/workspace/sequential-capacity-probes/data/processed/s3_beauty/leave_one_out/holdout.csv",
+      "rows": 22311,
+      "sha256": "38dbedf2dedc6951be1d8a3d4f6b2d93aa7129ce5d4f0fcf0d17bee0e315f43a"
+    },
+    "train": {
+      "path": "/workspace/sequential-capacity-probes/data/processed/s3_beauty/leave_one_out/train.csv",
+      "rows": 176139,
+      "sha256": "956357e585c8c4ddf50ff4dd4331d7e046c1b42b8eaa13cc21c8b9dccee89795"
+    }
+  },
+  "dataset": "beauty",
+  "environment": {
+    "command": [
+      "scripts/run_all.py"
+    ],
+    "cuda_available": true,
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "platform": "Linux-6.12.85+-x86_64-with-glibc2.35",
+    "python": "3.10.12 (main, Jun 22 2026, 18:55:27) [GCC 11.4.0]",
+    "rectools": "0.13.0",
+    "scipy": "1.12.0",
+    "source_commit": "35d5e8f60c2c831c346c5b56ebcbe3d139f67327",
+    "source_dirty": false,
+    "source_tree_sha256": "83b755a44f64cd61009da84c9f7e8d77869d34b62410cd978542890ee909322a",
+    "torch": "2.7.1+cu126",
+    "torch_cuda": "12.6"
+  },
+  "model": "sasrec_plus",
+  "model_params": {
+    "backbone_kwargs": null,
+    "backbone_type": "rectools.models.nn.transformers.torch_backbone.TransformerTorchBackbone",
+    "batch_size": 128,
+    "cls": "SASRecModel",
+    "data_preparator_kwargs": null,
+    "data_preparator_type": "rectools.models.nn.transformers.sasrec.SASRecDataPreparator",
+    "dataloader_num_workers": 0,
+    "deterministic": true,
+    "dropout_rate": 0.2,
+    "epochs": 3,
+    "gbce_t": 0.2,
+    "get_trainer_func": "src.models.transformers.trainer.get_trainer_200_epochs",
+    "get_val_mask_func": "src.models.transformers.trainer.get_val_mask_func_all",
+    "item_net_block_types": [
+      "rectools.models.nn.item_net.IdEmbeddingsItemNet",
+      "rectools.models.nn.item_net.CatFeaturesItemNet"
+    ],
+    "item_net_constructor_kwargs": null,
+    "item_net_constructor_type": "rectools.models.nn.item_net.SumOfEmbeddingsConstructor",
+    "lightning_module_kwargs": null,
+    "lightning_module_type": "rectools.models.nn.transformers.lightning.TransformerLightningModule",
+    "loss": "sampled_softmax",
+    "lr": 0.001,
+    "n_blocks": 1,
+    "n_factors": 64,
+    "n_heads": 1,
+    "n_negatives": 256,
+    "negative_sampler_kwargs": null,
+    "negative_sampler_type": "rectools.models.nn.transformers.negative_sampler.CatalogUniformSampler",
+    "pos_encoding_kwargs": null,
+    "pos_encoding_type": "rectools.models.nn.transformers.net_blocks.LearnableInversePositionalEncoding",
+    "recommend_batch_size": 256,
+    "recommend_torch_device": null,
+    "session_max_len": 50,
+    "similarity_module_kwargs": null,
+    "similarity_module_type": "rectools.models.nn.transformers.similarity.DistanceSimilarityModule",
+    "train_min_user_interactions": 2,
+    "transformer_layers_kwargs": null,
+    "transformer_layers_type": "rectools.models.nn.transformers.sasrec.SASRecTransformerLayers",
+    "use_causal_attn": true,
+    "use_key_padding_mask": false,
+    "use_pos_emb": true,
+    "verbose": 1
+  },
+  "official_metrics": {
+    "ndcg@10": 0.0534401276957474,
+    "recall@10": 0.0921070324055398
+  },
+  "protocol": {
+    "deterministic": true,
+    "early_stopping_patience": 50,
+    "filter_viewed": true,
+    "full_catalogue": true,
+    "k": 10,
+    "max_epochs": 200,
+    "recall_k": 10,
+    "seed": 32,
+    "trainer": "src.models.transformers.trainer.get_trainer_200_epochs",
+    "validation_metric": "Recall@10",
+    "validation_users": "src.models.transformers.trainer.get_val_mask_func_all"
+  },
+  "upstream": {
+    "checkpoint": "rectools_logs/lightning_logs/version_0/checkpoints/best_recall.ckpt",
+    "commit": "2b039927ceb4c7654131d7ac7c43ea124b49d240",
+    "config": "/workspace/sequential-capacity-probes/results/upstream_configs/beauty_sasrec_plus.yaml",
+    "report": "/workspace/sequential-capacity-probes/.external/transformer_benchmark/reports/leave_one_out/s3_beauty/holdout/table1_beauty_sasrec_plus.csv"
+  }
+}

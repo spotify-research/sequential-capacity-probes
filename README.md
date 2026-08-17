@@ -164,6 +164,15 @@ CSV. Consequently, local-model evaluation needs RecTools but does not need to
 import the eSASRec source tree; the eSASRec checkout remains required for data
 preparation and neural-model execution.
 
+### Published clean-room evidence
+
+The complete result matrix, independent verification report, and all 35
+per-model metadata records are available in
+[`artifacts/table1-clean-room`](artifacts/table1-clean-room). Each record
+contains the exact source commit and digest, split hashes, frozen parameters,
+environment, official metrics, and independent cross-checks. The evidence
+contains no datasets or model checkpoints.
+
 ## Code map
 
 The five paper implementations requested for direct inspection are in

@@ -1,0 +1,368 @@
+{
+  "checks": [
+    {
+      "actual": 0.04917674433126107,
+      "criterion": "exact reported four-decimal value",
+      "dataset": "beauty",
+      "delta": -2.325566873893209e-05,
+      "model": "mc",
+      "reported": 0.0492,
+      "status": "pass"
+    },
+    {
+      "actual": 0.048106803594069734,
+      "criterion": "absolute NDCG@10 delta <= 0.001",
+      "dataset": "beauty",
+      "delta": 6.8035940697375175e-06,
+      "model": "fmc",
+      "reported": 0.0481,
+      "status": "pass"
+    },
+    {
+      "actual": 0.05307078848715795,
+      "criterion": "absolute NDCG@10 delta <= 0.001",
+      "dataset": "beauty",
+      "delta": -2.9211512842054754e-05,
+      "model": "fmc_plus",
+      "reported": 0.0531,
+      "status": "pass"
+    },
+    {
+      "actual": 0.0534401276957474,
+      "criterion": "absolute NDCG@10 delta <= 0.005",
+      "dataset": "beauty",
+      "delta": -0.0002598723042525966,
+      "model": "sasrec_plus",
+      "reported": 0.0537,
+      "status": "pass"
+    },
+    {
+      "actual": 0.0510836943182292,
+      "criterion": "absolute NDCG@10 delta <= 0.005",
+      "dataset": "beauty",
+      "delta": -0.0013163056817708033,
+      "model": "esasrec",
+      "reported": 0.0524,
+      "status": "pass"
+    },
+    {
+      "actual": 0.060476680242953246,
+      "criterion": "exact reported four-decimal value",
+      "dataset": "beauty",
+      "delta": -2.3319757046752487e-05,
+      "model": "seqrules",
+      "reported": 0.0605,
+      "status": "pass"
+    },
+    {
+      "actual": 0.06351669441168159,
+      "criterion": "exact reported four-decimal value",
+      "dataset": "beauty",
+      "delta": 1.669441168158925e-05,
+      "model": "pctm",
+      "reported": 0.0635,
+      "status": "pass"
+    },
+    {
+      "actual": 0.02512631269810142,
+      "criterion": "exact reported four-decimal value",
+      "dataset": "sports",
+      "delta": 2.631269810141751e-05,
+      "model": "mc",
+      "reported": 0.0251,
+      "status": "pass"
+    },
+    {
+      "actual": 0.024419411790984683,
+      "criterion": "absolute NDCG@10 delta <= 0.001",
+      "dataset": "sports",
+      "delta": 1.941179098468096e-05,
+      "model": "fmc",
+      "reported": 0.0244,
+      "status": "pass"
+    },
+    {
+      "actual": 0.027098598520343724,
+      "criterion": "absolute NDCG@10 delta <= 0.001",
+      "dataset": "sports",
+      "delta": -1.4014796562746012e-06,
+      "model": "fmc_plus",
+      "reported": 0.0271,
+      "status": "pass"
+    },
+    {
+      "actual": 0.0321395457658469,
+      "criterion": "absolute NDCG@10 delta <= 0.005",
+      "dataset": "sports",
+      "delta": 0.0006395457658468981,
+      "model": "sasrec_plus",
+      "reported": 0.0315,
+      "status": "pass"
+    },
+    {
+      "actual": 0.0319926837297193,
+      "criterion": "absolute NDCG@10 delta <= 0.005",
+      "dataset": "sports",
+      "delta": -0.00040731627028069844,
+      "model": "esasrec",
+      "reported": 0.0324,
+      "status": "pass"
+    },
+    {
+      "actual": 0.03712569073678912,
+      "criterion": "exact reported four-decimal value",
+      "dataset": "sports",
+      "delta": 2.5690736789117652e-05,
+      "model": "seqrules",
+      "reported": 0.0371,
+      "status": "pass"
+    },
+    {
+      "actual": 0.036794512955713954,
+      "criterion": "exact reported four-decimal value",
+      "dataset": "sports",
+      "delta": -5.487044286045517e-06,
+      "model": "pctm",
+      "reported": 0.0368,
+      "status": "pass"
+    },
+    {
+      "actual": 0.054778759467084166,
+      "criterion": "exact reported four-decimal value",
+      "dataset": "toys",
+      "delta": -2.124053291583522e-05,
+      "model": "mc",
+      "reported": 0.0548,
+      "status": "pass"
+    },
+    {
+      "actual": 0.05587542148653014,
+      "criterion": "absolute NDCG@10 delta <= 0.001",
+      "dataset": "toys",
+      "delta": 0.00047542148653013927,
+      "model": "fmc",
+      "reported": 0.0554,
+      "status": "pass"
+    },
+    {
+      "actual": 0.058792629210453654,
+      "criterion": "absolute NDCG@10 delta <= 0.001",
+      "dataset": "toys",
+      "delta": -7.370789546344569e-06,
+      "model": "fmc_plus",
+      "reported": 0.0588,
+      "status": "pass"
+    },
+    {
+      "actual": 0.058660948653839,
+      "criterion": "absolute NDCG@10 delta <= 0.005",
+      "dataset": "toys",
+      "delta": 0.0011609486538389988,
+      "model": "sasrec_plus",
+      "reported": 0.0575,
+      "status": "pass"
+    },
+    {
+      "actual": 0.0516333796365095,
+      "criterion": "absolute NDCG@10 delta <= 0.005",
+      "dataset": "toys",
+      "delta": -0.0016666203634905022,
+      "model": "esasrec",
+      "reported": 0.0533,
+      "status": "pass"
+    },
+    {
+      "actual": 0.07299674545893094,
+      "criterion": "exact reported four-decimal value",
+      "dataset": "toys",
+      "delta": -3.2545410690587584e-06,
+      "model": "seqrules",
+      "reported": 0.073,
+      "status": "pass"
+    },
+    {
+      "actual": 0.07377001569106884,
+      "criterion": "exact reported four-decimal value",
+      "dataset": "toys",
+      "delta": -2.99843089311691e-05,
+      "model": "pctm",
+      "reported": 0.0738,
+      "status": "pass"
+    },
+    {
+      "actual": 0.12395592640437567,
+      "criterion": "exact reported four-decimal value",
+      "dataset": "ml1m",
+      "delta": -4.407359562433322e-05,
+      "model": "mc",
+      "reported": 0.124,
+      "status": "pass"
+    },
+    {
+      "actual": 0.11243746963835269,
+      "criterion": "absolute NDCG@10 delta <= 0.001",
+      "dataset": "ml1m",
+      "delta": 3.746963835268846e-05,
+      "model": "fmc",
+      "reported": 0.1124,
+      "status": "pass"
+    },
+    {
+      "actual": 0.12059315435877965,
+      "criterion": "absolute NDCG@10 delta <= 0.001",
+      "dataset": "ml1m",
+      "delta": -6.845641220346033e-06,
+      "model": "fmc_plus",
+      "reported": 0.1206,
+      "status": "pass"
+    },
+    {
+      "actual": 0.1654249327224325,
+      "criterion": "absolute NDCG@10 delta <= 0.005",
+      "dataset": "ml1m",
+      "delta": -0.0007750672775674872,
+      "model": "sasrec_plus",
+      "reported": 0.1662,
+      "status": "pass"
+    },
+    {
+      "actual": 0.1766740228171455,
+      "criterion": "absolute NDCG@10 delta <= 0.005",
+      "dataset": "ml1m",
+      "delta": 0.002774022817145505,
+      "model": "esasrec",
+      "reported": 0.1739,
+      "status": "pass"
+    },
+    {
+      "actual": 0.15049353711333982,
+      "criterion": "exact reported four-decimal value",
+      "dataset": "ml1m",
+      "delta": -6.462886660174583e-06,
+      "model": "seqrules",
+      "reported": 0.1505,
+      "status": "pass"
+    },
+    {
+      "actual": 0.18151569527641828,
+      "criterion": "exact reported four-decimal value",
+      "dataset": "ml1m",
+      "delta": 1.5695276418287163e-05,
+      "model": "pctm",
+      "reported": 0.1815,
+      "status": "pass"
+    },
+    {
+      "actual": 0.10501182733980856,
+      "criterion": "exact reported four-decimal value",
+      "dataset": "ml20m",
+      "delta": 1.182733980856221e-05,
+      "model": "mc",
+      "reported": 0.105,
+      "status": "pass"
+    },
+    {
+      "actual": 0.08065204572817027,
+      "criterion": "absolute NDCG@10 delta <= 0.001",
+      "dataset": "ml20m",
+      "delta": -4.795427182972822e-05,
+      "model": "fmc",
+      "reported": 0.0807,
+      "status": "pass"
+    },
+    {
+      "actual": 0.1034127882319515,
+      "criterion": "absolute NDCG@10 delta <= 0.001",
+      "dataset": "ml20m",
+      "delta": 1.2788231951499363e-05,
+      "model": "fmc_plus",
+      "reported": 0.1034,
+      "status": "pass"
+    },
+    {
+      "actual": 0.1813865144631605,
+      "criterion": "absolute NDCG@10 delta <= 0.005",
+      "dataset": "ml20m",
+      "delta": 0.0007865144631604981,
+      "model": "sasrec_plus",
+      "reported": 0.1806,
+      "status": "pass"
+    },
+    {
+      "actual": 0.1947600227309118,
+      "criterion": "absolute NDCG@10 delta <= 0.005",
+      "dataset": "ml20m",
+      "delta": -0.0021399772690881835,
+      "model": "esasrec",
+      "reported": 0.1969,
+      "status": "pass"
+    },
+    {
+      "actual": 0.11152513006962173,
+      "criterion": "exact reported four-decimal value",
+      "dataset": "ml20m",
+      "delta": 2.513006962172326e-05,
+      "model": "seqrules",
+      "reported": 0.1115,
+      "status": "pass"
+    },
+    {
+      "actual": 0.14311938053078943,
+      "criterion": "exact reported four-decimal value",
+      "dataset": "ml20m",
+      "delta": 1.93805307894257e-05,
+      "model": "pctm",
+      "reported": 0.1431,
+      "status": "pass"
+    }
+  ],
+  "created_at": "2026-08-16T05:27:07.697882+00:00",
+  "criterion": {
+    "default": "exact reported four-decimal NDCG@10 value",
+    "model_absolute_tolerances": {
+      "esasrec": 0.005,
+      "fmc": 0.001,
+      "fmc_plus": 0.001,
+      "sasrec_plus": 0.005
+    }
+  },
+  "mismatches": [],
+  "result_sha256": {
+    "beauty/esasrec.json": "1eff833a60660ff770a9d77a9354e579598329d30a3ccc459eb3c8dd2a8c912c",
+    "beauty/fmc.json": "34ead38e54a5d5e9ec704560e666203efbbe3a506bf81c9a2ada3bb1b68cef49",
+    "beauty/fmc_plus.json": "6efb17a57c9c1dc0b336e0fdd83443769556b774152d74e4dc6d53fee02a7380",
+    "beauty/mc.json": "421d947d725d316c415a81034ef5174efa5a762f7744ca410e62256e33d8aa17",
+    "beauty/pctm.json": "c66364cc6815edf4fc565ae6a49145254b8e6831e94ad33f5a86c2a0a7f24be7",
+    "beauty/sasrec_plus.json": "88e9a834e84200ded1305dba33bcef0f30f3fc079bc30027eab4cca3930cd51c",
+    "beauty/seqrules.json": "460e25ed1f7aa77767f249530101860ca080e6a2513795120bae491a3069c57f",
+    "ml1m/esasrec.json": "0f68e7599a5af4d1fcd23cc3df91eaee8c36edaee00e12971f479d9190455954",
+    "ml1m/fmc.json": "b301408b7acc8492767fcf7c9fd2ef1f4c51092e1ccab32d1fe997b28ea8b64a",
+    "ml1m/fmc_plus.json": "4b3ff888c62ceafb10646a0be3796af7e0bb2ea11abca706ecd714190c068ef3",
+    "ml1m/mc.json": "6e5576e64261669b580cc77db0c7333b92f48e4cea2e52ec2f3c781266068e67",
+    "ml1m/pctm.json": "2f7ac2f52147d7cdbd0e4da69c8dec0f864d393f9cb5a4293131008815deb454",
+    "ml1m/sasrec_plus.json": "141d108c904f3b9e5e51a0a7e7f875890701e163ae69f776e044c7dad22d25ee",
+    "ml1m/seqrules.json": "be31feeefba66fa0eecfcec133e8884b84c044542bf5bad6097c33f24ae3a7c2",
+    "ml20m/esasrec.json": "ecee0ff2b6ac9b1c405a210c508b9f45982119143f584cdc8def121f92766f3a",
+    "ml20m/fmc.json": "3bc3db2dc58db92b9e5e5c89a1a8ae2e06f1e7d1e1db03c6146f90df07b21fdb",
+    "ml20m/fmc_plus.json": "842c6ae5a22baea83f04c17c4d755d496326eb64cb596513cd8a592a5d3553c8",
+    "ml20m/mc.json": "88e6581858f4afa6da915863629f2480d34c34a91ae82a95804d8f0c1c371d77",
+    "ml20m/pctm.json": "6a8959b47dc2d3ce39a5443cec494abcb66b574da76112226552c4e66329b7f7",
+    "ml20m/sasrec_plus.json": "e66d64094355bf79bccb018778b82fe88ec8ce075a788d111fc911283c20b15e",
+    "ml20m/seqrules.json": "eb2a203f7755a773c49fe07e843d1884731e20f79b0bb8ce6a59b0eac655ec04",
+    "sports/esasrec.json": "37f967a9666e8e879e96b77411325fda00126fde31bfcc3cdafb195ffc650615",
+    "sports/fmc.json": "6cb05415dc03382193d1aa392687d036712084e01a37fe02aa06480416717332",
+    "sports/fmc_plus.json": "3ea4de611590506bf06a02a4a1a04176e2e4a05c3c801c51bacf3df197388629",
+    "sports/mc.json": "89975523a0421a15ec8f207d6778f62cae1d01946331d68600d71cd3b55d9cc8",
+    "sports/pctm.json": "6b99214080a718f4c0201bf6d25dc58b2996acf1a07c70960872a5c131f71847",
+    "sports/sasrec_plus.json": "f1034e77744d4800344e5a049c472533469142f43c81eed4f8f5e0c8c3d90c27",
+    "sports/seqrules.json": "360b0097079f20bf5f28baf3ad81d9afb87a0516ce09b3d56c40b058fa4c4274",
+    "toys/esasrec.json": "d3258976fb02569acff7a5be4853471a3bd27a8e7a31591243c8cddec6258047",
+    "toys/fmc.json": "5350d595d5fdfde58b3184f9181267b35308d7f6523ffbd837975e3837257945",
+    "toys/fmc_plus.json": "280862932e6920a78c31c8475c1c979d08d7bab224827afed56e9990e5a99b52",
+    "toys/mc.json": "65de3c779542bd028405405999ac0704d10693e2e0779a4e70961a97ad2a38de",
+    "toys/pctm.json": "e655ee734143cd9182f808377ac1874809c76550013c932e07ac4b8aa3e71b15",
+    "toys/sasrec_plus.json": "f78eba65844b31530c015117f06c7dcbe47e40f226cb52ff3fbd4fc6c9017d4a",
+    "toys/seqrules.json": "f079755a25e90e0e7d30cf7bec38309c7f409315c6df0bb4fbe275d51597dd65"
+  },
+  "status": "pass"
+}

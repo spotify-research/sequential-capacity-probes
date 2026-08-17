@@ -1,0 +1,62 @@
+{
+  "config": {
+    "history_length": 10,
+    "history_weighting": "div",
+    "rules": {
+      "idf_weight": false,
+      "pruning": 0,
+      "steps": 30,
+      "weighting": "log"
+    }
+  },
+  "created_at": "2026-08-15T21:54:10.141067+00:00",
+  "custom_metrics": {
+    "hit_rate10": 0.11422669765040021,
+    "ndcg10": 0.07299674545893127,
+    "precision10": 0.011422669765039592,
+    "reachable": 0.38982700748773563,
+    "recall10": 0.11422669765040021,
+    "users": 19365
+  },
+  "data": {
+    "holdout": {
+      "path": "/workspace/sequential-capacity-probes/data/processed/s3_toys/leave_one_out/holdout.csv",
+      "rows": 19365,
+      "sha256": "ff18781f3e2784b1d4438bdd5a54be7fb75aa0f2d7d08f552271f135bf1ee7b8"
+    },
+    "train": {
+      "path": "/workspace/sequential-capacity-probes/data/processed/s3_toys/leave_one_out/train.csv",
+      "rows": 148185,
+      "sha256": "ca9191ea48da1bc4b9ed812354ae3b58a7b93f2417d4794142c9c9dc0230b356"
+    }
+  },
+  "dataset": "toys",
+  "environment": {
+    "command": [
+      "scripts/run_all.py"
+    ],
+    "cuda_available": true,
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "platform": "Linux-6.12.85+-x86_64-with-glibc2.35",
+    "python": "3.10.12 (main, Jun 22 2026, 18:55:27) [GCC 11.4.0]",
+    "rectools": "0.13.0",
+    "scipy": "1.12.0",
+    "source_commit": "35d5e8f60c2c831c346c5b56ebcbe3d139f67327",
+    "source_dirty": false,
+    "source_tree_sha256": "83b755a44f64cd61009da84c9f7e8d77869d34b62410cd978542890ee909322a",
+    "torch": "2.7.1+cu126",
+    "torch_cuda": "12.6"
+  },
+  "model": "seqrules",
+  "official_metrics": {
+    "ndcg@10": 0.07299674545893094,
+    "recall@10": 0.11422669765040021
+  },
+  "protocol": {
+    "filter_viewed": true,
+    "full_catalogue": true,
+    "k": 10,
+    "tie_break": "ascending external item ID"
+  }
+}

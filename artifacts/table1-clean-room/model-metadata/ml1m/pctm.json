@@ -1,0 +1,58 @@
+{
+  "config": {
+    "counts": "inv:20:1.0",
+    "kernel": "tail:7:0.8:0.6",
+    "pop_boost": -0.4,
+    "tau": 150.0
+  },
+  "created_at": "2026-08-15T22:07:05.481546+00:00",
+  "custom_metrics": {
+    "hit_rate10": 0.30573037429612454,
+    "ndcg10": 0.18151569527641798,
+    "precision10": 0.030573037429611427,
+    "reachable": 1.0,
+    "recall10": 0.30573037429612454,
+    "users": 6038
+  },
+  "data": {
+    "holdout": {
+      "path": "/workspace/sequential-capacity-probes/data/processed/ml_1m/leave_one_out/holdout.csv",
+      "rows": 6038,
+      "sha256": "83bf1681a6dc94a5e567fcca9bd5de44618ff4097f9a2172df840bdbcb15f478"
+    },
+    "train": {
+      "path": "/workspace/sequential-capacity-probes/data/processed/ml_1m/leave_one_out/train.csv",
+      "rows": 994169,
+      "sha256": "74afd9fcafba3e694195fe26c8ea486ec12dd16f22f0aaaa88cbcd66c960176a"
+    }
+  },
+  "dataset": "ml1m",
+  "environment": {
+    "command": [
+      "scripts/run_all.py"
+    ],
+    "cuda_available": true,
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "platform": "Linux-6.12.85+-x86_64-with-glibc2.35",
+    "python": "3.10.12 (main, Jun 22 2026, 18:55:27) [GCC 11.4.0]",
+    "rectools": "0.13.0",
+    "scipy": "1.12.0",
+    "source_commit": "35d5e8f60c2c831c346c5b56ebcbe3d139f67327",
+    "source_dirty": false,
+    "source_tree_sha256": "83b755a44f64cd61009da84c9f7e8d77869d34b62410cd978542890ee909322a",
+    "torch": "2.7.1+cu126",
+    "torch_cuda": "12.6"
+  },
+  "model": "pctm",
+  "official_metrics": {
+    "ndcg@10": 0.18151569527641828,
+    "recall@10": 0.30573037429612454
+  },
+  "protocol": {
+    "filter_viewed": true,
+    "full_catalogue": true,
+    "k": 10,
+    "tie_break": "ascending SHA-256 digest of UTF-8 external item ID"
+  }
+}

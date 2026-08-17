@@ -1,8 +1,9 @@
 cff-version: 1.2.0
-message: "Please cite the RecSys 2026 paper when using this software."
+message: "Please cite the RecSys 2026 paper and the archived software release."
 title: "Sequential Capacity Probes"
 type: software
 version: 1.0.0
+date-released: 2026-08-17
 authors:
   - family-names: Petrov
     given-names: "Aleksandr V."

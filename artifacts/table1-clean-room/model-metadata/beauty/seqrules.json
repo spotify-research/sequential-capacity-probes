@@ -1,0 +1,62 @@
+{
+  "config": {
+    "history_length": 10,
+    "history_weighting": "quadratic",
+    "rules": {
+      "idf_weight": false,
+      "pruning": 100,
+      "steps": 10,
+      "weighting": "log"
+    }
+  },
+  "created_at": "2026-08-15T20:37:31.060784+00:00",
+  "custom_metrics": {
+    "hit_rate10": 0.09555824481197615,
+    "ndcg10": 0.06047668024295321,
+    "precision10": 0.009555824481197635,
+    "reachable": 0.3194388418269015,
+    "recall10": 0.09555824481197615,
+    "users": 22311
+  },
+  "data": {
+    "holdout": {
+      "path": "/workspace/sequential-capacity-probes/data/processed/s3_beauty/leave_one_out/holdout.csv",
+      "rows": 22311,
+      "sha256": "38dbedf2dedc6951be1d8a3d4f6b2d93aa7129ce5d4f0fcf0d17bee0e315f43a"
+    },
+    "train": {
+      "path": "/workspace/sequential-capacity-probes/data/processed/s3_beauty/leave_one_out/train.csv",
+      "rows": 176139,
+      "sha256": "956357e585c8c4ddf50ff4dd4331d7e046c1b42b8eaa13cc21c8b9dccee89795"
+    }
+  },
+  "dataset": "beauty",
+  "environment": {
+    "command": [
+      "scripts/run_all.py"
+    ],
+    "cuda_available": true,
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "platform": "Linux-6.12.85+-x86_64-with-glibc2.35",
+    "python": "3.10.12 (main, Jun 22 2026, 18:55:27) [GCC 11.4.0]",
+    "rectools": "0.13.0",
+    "scipy": "1.12.0",
+    "source_commit": "35d5e8f60c2c831c346c5b56ebcbe3d139f67327",
+    "source_dirty": false,
+    "source_tree_sha256": "83b755a44f64cd61009da84c9f7e8d77869d34b62410cd978542890ee909322a",
+    "torch": "2.7.1+cu126",
+    "torch_cuda": "12.6"
+  },
+  "model": "seqrules",
+  "official_metrics": {
+    "ndcg@10": 0.060476680242953246,
+    "recall@10": 0.09555824481197615
+  },
+  "protocol": {
+    "filter_viewed": true,
+    "full_catalogue": true,
+    "k": 10,
+    "tie_break": "ascending external item ID"
+  }
+}
