@@ -1,0 +1,36 @@
+cff-version: 1.2.0
+message: "Please cite the RecSys 2026 paper when using this software."
+title: "Sequential Capacity Probes"
+type: software
+version: 1.0.0
+authors:
+  - family-names: Petrov
+    given-names: "Aleksandr V."
+  - family-names: Chandar
+    given-names: Praveen
+  - family-names: Bennett
+    given-names: Paul
+  - family-names: Bouchard
+    given-names: Hugues
+  - family-names: Lalmas
+    given-names: Mounia
+repository-code: "https://github.com/spotify-research/sequential-capacity-probes"
+license: Apache-2.0
+preferred-citation:
+  type: conference-paper
+  title: "Do Sequential Recommendation Benchmarks Really Require Higher-Order Sequence Modelling?"
+  authors:
+    - family-names: Petrov
+      given-names: "Aleksandr V."
+    - family-names: Chandar
+      given-names: Praveen
+    - family-names: Bennett
+      given-names: Paul
+    - family-names: Bouchard
+      given-names: Hugues
+    - family-names: Lalmas
+      given-names: Mounia
+  collection-title: "Proceedings of the 20th ACM Conference on Recommender Systems (RecSys '26)"
+  publisher:
+    name: "Association for Computing Machinery"
+  year: 2026

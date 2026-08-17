@@ -1,0 +1,30 @@
+{
+  "release": {
+    "archives": {
+      "s3_beauty.zip": "429caa2f1853e0491691942e4b324f00c07a76eea54c508ee06d04a2d3ccafd5",
+      "s3_sports.zip": "26725ae7270fe26958b4cc468c80732beb27e58842635c852706ad1f5656ca7e",
+      "s3_toys.zip": "b329bdc41ee3610af01c75c0a10ce25063a1392bd8c1e1c6b16a9df1f4482394",
+      "ml_1m.zip": "9adb19f9939e67b2293774ad30fa590ed548f8c87dce558f9ce43fed2c187b08",
+      "ml_20m.zip": "ee5c965e4df0d5d9a085b510cecbd502f0790d1e205247d49ca109114836eb69"
+    }
+  },
+  "public_raw": {
+    "Beauty.txt": "226cce9c3105299ca0db9615d7d3fb32b3175e90da43100ae352599f0f0107b8",
+    "Sports_and_Outdoors.txt": "2a095e0648872beb9982408958290f5d655db5be2911c3756b5446de9f0b8de2",
+    "Toys_and_Games.txt": "176c680c688d497598c4a89a03b402c0fe78d795e5db335c2e78dd5f2d778a3f",
+    "ml-1m.zip": "a6898adb50b9ca05aa231689da44c217cb524e7ebd39d264c56e2832f2c54e20",
+    "ml-20m.zip": "96f243c338a8665f6bcc89c53edf6ee39162a846940de6b7c8c48aeada765ff3"
+  },
+  "processed": {
+    "s3_beauty/leave_one_out/train.csv": {"sha256": "956357e585c8c4ddf50ff4dd4331d7e046c1b42b8eaa13cc21c8b9dccee89795", "rows": 176139},
+    "s3_beauty/leave_one_out/holdout.csv": {"sha256": "38dbedf2dedc6951be1d8a3d4f6b2d93aa7129ce5d4f0fcf0d17bee0e315f43a", "rows": 22311},
+    "s3_sports/leave_one_out/train.csv": {"sha256": "e90df6401241237709a9386d91fd9c2f24eb132665e99e74d6f5af5e12b8b9a6", "rows": 260739},
+    "s3_sports/leave_one_out/holdout.csv": {"sha256": "2fb358ca824c8df1e655275ba13d106b1c1b2dc1bb131810cc8519919abc1139", "rows": 35539},
+    "s3_toys/leave_one_out/train.csv": {"sha256": "ca9191ea48da1bc4b9ed812354ae3b58a7b93f2417d4794142c9c9dc0230b356", "rows": 148185},
+    "s3_toys/leave_one_out/holdout.csv": {"sha256": "ff18781f3e2784b1d4438bdd5a54be7fb75aa0f2d7d08f552271f135bf1ee7b8", "rows": 19365},
+    "ml_1m/leave_one_out/train.csv": {"sha256": "74afd9fcafba3e694195fe26c8ea486ec12dd16f22f0aaaa88cbcd66c960176a", "rows": 994169},
+    "ml_1m/leave_one_out/holdout.csv": {"sha256": "83bf1681a6dc94a5e567fcca9bd5de44618ff4097f9a2172df840bdbcb15f478", "rows": 6038},
+    "ml_20m/leave_one_out/train.csv": {"sha256": "5392d0bd6cb40724a141f0419fd039064058f7a154f9a8c31d9659a221c16f82", "rows": 19861770},
+    "ml_20m/leave_one_out/holdout.csv": {"sha256": "b5da7afee4b9d24b7e6f6bcaea33d7d961ad63db19cf9a8df8faf63563e676d7", "rows": 138456}
+  }
+}

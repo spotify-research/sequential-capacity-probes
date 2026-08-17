@@ -1,0 +1,10 @@
+Sequential Capacity Probes
+Copyright 2026 Aleksandr V. Petrov, Praveen Chandar, Paul Bennett,
+Hugues Bouchard, and Mounia Lalmas
+
+This project invokes, but does not redistribute, transformer_benchmark
+(eSASRec), Copyright its contributors, under the Apache License 2.0.
+The exact upstream source and commit are recorded in README.md.
+
+Spotify and the Spotify logo are trademarks of Spotify AB. The logo asset in
+assets/spotify-research-icon.png is not licensed under the Apache License 2.0.

@@ -1,0 +1,92 @@
+{
+  "protocol": {
+    "refit_seed": 20270710,
+    "neural_seed": 32,
+    "environment": {
+      "python": "3.10.12",
+      "numpy": "1.26.4",
+      "pandas": "2.3.3",
+      "scipy": "1.12.0",
+      "torch": "2.7.1",
+      "rectools": "0.13.0"
+    },
+    "neural_defaults": {
+      "learning_rate": 0.001,
+      "batch_size": 128,
+      "early_stopping_patience": 50,
+      "validation_metric": "Recall@10",
+      "amazon_max_epochs": 200,
+      "movielens_max_epochs": 100
+    },
+    "mc_tie_break": "ascending external item ID",
+    "seqrules_tie_break": "ascending external item ID",
+    "pctm_tie_break": "ascending SHA-256 digest of UTF-8 external item ID",
+    "factorized_tie_break": "PyTorch top-k; equal-score order is backend-dependent",
+    "k": 10,
+    "esasrec_commit": "2b039927ceb4c7654131d7ac7c43ea124b49d240",
+    "s3rec_data_commit": "2a81540ae18615d88ef88227b0c066e5b74781e5"
+  },
+  "verification": {
+    "exact_4dp_models": ["mc", "pctm", "seqrules"],
+    "absolute_ndcg10_tolerance": {
+      "fmc": 0.001,
+      "fmc_plus": 0.001,
+      "sasrec_plus": 0.005,
+      "esasrec": 0.005
+    }
+  },
+  "datasets": {
+    "beauty": {
+      "directory": "s3_beauty", "max_history": 50,
+      "pctm": {"counts": "inv:10:0.5", "tau": 11250.0, "kernel": "exp:0.6", "pop_boost": -0.04},
+      "sasrec_plus": {"layers": "SASRec", "factors": 64, "max_length": 50, "blocks": 1, "heads": 1, "dropout": 0.2, "loss": "sampled_softmax", "negatives": 256},
+      "esasrec": {"layers": "LiGR", "factors": 64, "max_length": 50, "blocks": 1, "heads": 1, "dropout": 0.2, "ff_multiplier": 4, "loss": "sampled_softmax", "negatives": 256},
+      "seqrules": {"rules": {"steps": 10, "weighting": "log", "pruning": 100, "idf_weight": false}, "history_length": 10, "history_weighting": "quadratic"},
+      "fmc": {"objective": "sampled_bce", "factors": 256, "learning_rate": 0.003, "dropout": 0.0, "weight_decay": 0.0, "epochs": 5},
+      "fmc_plus": {"objective": "full_ce", "factors": 128, "learning_rate": 0.003, "dropout": 0.0, "weight_decay": 0.0, "epochs": 16}
+    },
+    "sports": {
+      "directory": "s3_sports", "max_history": 50,
+      "pctm": {"counts": "inv:10:0.5", "tau": 15000.0, "kernel": "tail:10:0.8:0.7", "pop_boost": 0.0},
+      "sasrec_plus": {"layers": "SASRec", "factors": 64, "max_length": 50, "blocks": 1, "heads": 1, "dropout": 0.2, "loss": "sampled_softmax", "negatives": 256},
+      "esasrec": {"layers": "LiGR", "factors": 64, "max_length": 50, "blocks": 1, "heads": 1, "dropout": 0.2, "ff_multiplier": 2, "loss": "sampled_softmax", "negatives": 256},
+      "seqrules": {"rules": {"steps": 30, "weighting": "log", "pruning": 0, "idf_weight": false}, "history_length": 20, "history_weighting": "div"},
+      "fmc": {"objective": "sampled_bce", "factors": 256, "learning_rate": 0.003, "dropout": 0.0, "weight_decay": 0.0, "epochs": 4},
+      "fmc_plus": {"objective": "full_ce", "factors": 256, "learning_rate": 0.003, "dropout": 0.0, "weight_decay": 0.0, "epochs": 9}
+    },
+    "toys": {
+      "directory": "s3_toys", "max_history": 50,
+      "pctm": {"counts": "exp:20:0.7", "tau": 15000.0, "kernel": "tail:7:0.8:0.6", "pop_boost": 0.0},
+      "sasrec_plus": {"layers": "SASRec", "factors": 64, "max_length": 50, "blocks": 1, "heads": 1, "dropout": 0.2, "loss": "sampled_softmax", "negatives": 256},
+      "esasrec": {"layers": "LiGR", "factors": 64, "max_length": 50, "blocks": 1, "heads": 1, "dropout": 0.2, "ff_multiplier": 1, "loss": "sampled_softmax", "negatives": 256},
+      "seqrules": {"rules": {"steps": 30, "weighting": "log", "pruning": 0, "idf_weight": false}, "history_length": 10, "history_weighting": "div"},
+      "fmc": {"objective": "sampled_bce", "factors": 256, "learning_rate": 0.003, "dropout": 0.2, "weight_decay": 0.0, "epochs": 8},
+      "fmc_plus": {"objective": "full_ce", "factors": 256, "learning_rate": 0.003, "dropout": 0.0, "weight_decay": 0.0, "epochs": 12}
+    },
+    "ml1m": {
+      "directory": "ml_1m", "max_history": 200,
+      "pctm": {"counts": "inv:20:1.0", "tau": 150.0, "kernel": "tail:7:0.8:0.6", "pop_boost": -0.4},
+      "sasrec_plus": {"layers": "SASRec", "factors": 64, "max_length": 200, "blocks": 2, "heads": 1, "dropout": 0.1, "loss": "sampled_softmax", "negatives": 256},
+      "esasrec": {"layers": "LiGR", "factors": 64, "max_length": 200, "blocks": 2, "heads": 1, "dropout": 0.1, "loss": "sampled_softmax", "negatives": 256},
+      "seqrules": {"rules": {"steps": 10, "weighting": "div", "pruning": 200, "idf_weight": true}, "history_length": 10, "history_weighting": "quadratic"},
+      "fmc": {"objective": "sampled_bce", "factors": 256, "learning_rate": 0.003, "dropout": 0.0, "weight_decay": 0.0, "epochs": 29},
+      "fmc_plus": {"objective": "full_ce", "factors": 64, "learning_rate": 0.01, "dropout": 0.0, "weight_decay": 0.0, "epochs": 21}
+    },
+    "ml20m": {
+      "directory": "ml_20m", "max_history": 200,
+      "pctm": {"counts": "exp:10:0.5", "tau": 225.0, "kernel": "tail:7:0.8:0.6", "pop_boost": -0.5},
+      "sasrec_plus": {"layers": "SASRec", "factors": 256, "max_length": 200, "blocks": 4, "heads": 8, "dropout": 0.2, "loss": "sampled_softmax", "negatives": 256},
+      "esasrec": {"layers": "LiGR", "factors": 256, "max_length": 200, "blocks": 4, "heads": 8, "dropout": 0.2, "loss": "sampled_softmax", "negatives": 256},
+      "seqrules": {"rules": {"steps": 20, "weighting": "div", "pruning": 100, "idf_weight": true}, "history_length": 5, "history_weighting": "quadratic"},
+      "fmc": {"objective": "sampled_bce", "factors": 256, "learning_rate": 0.003, "dropout": 0.0, "weight_decay": 0.0, "epochs": 7},
+      "fmc_plus": {"objective": "full_ce", "factors": 128, "learning_rate": 0.003, "dropout": 0.0, "weight_decay": 0.0, "epochs": 45}
+    }
+  },
+  "reported_ndcg10": {
+    "beauty": {"mc": 0.0492, "fmc": 0.0481, "fmc_plus": 0.0531, "sasrec_plus": 0.0537, "esasrec": 0.0524, "seqrules": 0.0605, "pctm": 0.0635},
+    "sports": {"mc": 0.0251, "fmc": 0.0244, "fmc_plus": 0.0271, "sasrec_plus": 0.0315, "esasrec": 0.0324, "seqrules": 0.0371, "pctm": 0.0368},
+    "toys": {"mc": 0.0548, "fmc": 0.0554, "fmc_plus": 0.0588, "sasrec_plus": 0.0575, "esasrec": 0.0533, "seqrules": 0.0730, "pctm": 0.0738},
+    "ml1m": {"mc": 0.1240, "fmc": 0.1124, "fmc_plus": 0.1206, "sasrec_plus": 0.1662, "esasrec": 0.1739, "seqrules": 0.1505, "pctm": 0.1815},
+    "ml20m": {"mc": 0.1050, "fmc": 0.0807, "fmc_plus": 0.1034, "sasrec_plus": 0.1806, "esasrec": 0.1969, "seqrules": 0.1115, "pctm": 0.1431}
+  }
+}
